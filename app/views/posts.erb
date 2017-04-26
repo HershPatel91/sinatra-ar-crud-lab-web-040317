@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blogs</title>
+</head>
+<body>
+<h1>Welcome to Blogs!</h1>
+</body>
+<% Post.all.each do |posts|%>
+<p><%= posts.name%></p>
+<p><%= posts.content%></p>
+<% end %>
+</html>

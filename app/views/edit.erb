@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form method="POST" action="/posts/<%= @post.id%>">
+<input id="hidden" type="hidden" name="_method" value="patch">
+<p>Blog Title: <input type="text" name="name" value="<%= @post.name%>"></p>
+<p>Blog Content: <input type="textarea" name="content" value="<%= @post.content%>"></p>
+<input type="submit" id="submit" value="submit">
+</form>
+</body>
+</html>
